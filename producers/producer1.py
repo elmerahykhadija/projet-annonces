@@ -1,7 +1,7 @@
 import sys
 import os
 
-# ✅ CORRECTION : Forcer l'encodage UTF-8 sur Windows
+
 if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
     sys.stderr.reconfigure(encoding='utf-8')
@@ -275,4 +275,5 @@ try:
 except KeyboardInterrupt:
     print("\n\nArret demande")
     producer.close()
+
     print("Producer ferme proprement")
