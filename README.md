@@ -132,10 +132,8 @@ streamlit run app.py
 
 Interface accessible sur : `http://localhost:8501`
 
-## 📧 Contact
 
-**Email** : elmerahy.ensa@uhp.ac.ma
-**Environnement** : WSL Ubuntu sur Windows
+
 
 
 
