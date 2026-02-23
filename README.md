@@ -16,12 +16,12 @@ Le système fonctionne selon cette architecture :
 - **Kafka** : Broker de messages (topics dédiés par source)
 - **2 Consumers Spark** : Traitent les flux en temps réel avec Apache Spark Streaming
 - **Interface Streamlit** : Permet aux utilisateurs de filtrer les offres selon leur budget, catégorie et ville
-
-![alt text](image-1.png)
+![alt text](img/img2.png)
+![alt text](img/image-1.png)
 
 ## 🏗️ Architecture
 
-![alt text](archi.png)
+![alt text](img/archi.png)
 
 ## 🚀 Technologies Utilisées
 
@@ -132,3 +132,4 @@ Interface accessible sur : `http://localhost:8501`
 
 **Email** : elmerahy.ensa@uhp.ac.ma
 **Environnement** : WSL Ubuntu sur Windows
+
