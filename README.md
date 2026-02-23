@@ -17,6 +17,7 @@ Le système fonctionne selon cette architecture :
 - **2 Consumers Spark** : Traitent les flux en temps réel avec Apache Spark Streaming
 - **Mysql**: base de données relationnelle pour le stockage des données nettoyées et transformées via Spark Streaming.
 - **Interface Streamlit** : Permet aux utilisateurs de filtrer les offres selon leur budget, catégorie et ville
+- **Containerisation Docker**: L’ensemble de l’architecture (Kafka, Spark, MySQL) est déployé dans des conteneurs Docker, permettant d’éviter les installations locales complexes et garantissant un environnement isolé, reproductible et facilement déployable.
 ![alt text](img/img2.png)
 ![alt text](img/image-1.png)
 
@@ -135,5 +136,6 @@ Interface accessible sur : `http://localhost:8501`
 
 **Email** : elmerahy.ensa@uhp.ac.ma
 **Environnement** : WSL Ubuntu sur Windows
+
 
 
