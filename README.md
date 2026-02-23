@@ -1,4 +1,4 @@
-# 🛒 Marketplace Aggregator - Projet Annonces
+# 🛒 Projet Annonces
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Kafka](https://img.shields.io/badge/Apache%20Kafka-Latest-black.svg)
@@ -9,12 +9,13 @@
 
 ## 📋 Description
 
-Application de scraping et d'agrégation d'annonces en temps réel provenant de plusieurs plateformes marocaines (Avito, MarocAnnonces).
+Application de collecte et de traitement d'annonces en temps réel provenant de plusieurs plateformes marocaines (Avito, MarocAnnonces).
 
 Le système fonctionne selon cette architecture :
 - **2 Producers** : Collectent les données via scraping et les envoient à Kafka
 - **Kafka** : Broker de messages (topics dédiés par source)
 - **2 Consumers Spark** : Traitent les flux en temps réel avec Apache Spark Streaming
+- **Mysql**: base de données relationnelle pour le stockage des données nettoyées et transformées via Spark Streaming.
 - **Interface Streamlit** : Permet aux utilisateurs de filtrer les offres selon leur budget, catégorie et ville
 ![alt text](img/img2.png)
 ![alt text](img/image-1.png)
@@ -38,6 +39,8 @@ Le système fonctionne selon cette architecture :
 
 ### Infrastructure
 - **WSL Ubuntu** : Environnement de développement
+  
+<img width="1914" height="935" alt="Screenshot 2026-02-22 145607" src="https://github.com/user-attachments/assets/cc0de911-3243-4bfd-92ff-f9a5578edb29" />
 
 ## 📦 Prérequis
 
@@ -132,4 +135,5 @@ Interface accessible sur : `http://localhost:8501`
 
 **Email** : elmerahy.ensa@uhp.ac.ma
 **Environnement** : WSL Ubuntu sur Windows
+
 
