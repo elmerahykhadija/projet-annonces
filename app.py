@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- 2. STYLE CSS AVANCÉ (VERSION PREMIUM DASHBOARD) ---
+# --- 2. STYLE CSS 
 st.markdown("""
 <style>
     /* Import de la police Inter */
@@ -282,3 +282,4 @@ elif df.empty:
     st.info("💡 En attente de données... Vérifiez la connexion à votre base MySQL (Port 3307).")
 else:
     st.warning("🧐 Aucune annonce ne correspond à vos critères. Essayez d'ajuster les filtres.")
+
